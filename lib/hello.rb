@@ -4,9 +4,9 @@ def hello_t(array)
   while i < array.length
     if block_given?
       yield array[i]
-    else 
+    else
       return("sad")
-    end       
+    end
     i = i + 1
   end
   array
