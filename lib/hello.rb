@@ -1,5 +1,8 @@
 def hello_t(array)
   # code here
+  if block_given? == false
+    return("Hey! No block was given!")
+  end
   i = 0
   while i < array.length
     yield array[i] if block_given?
